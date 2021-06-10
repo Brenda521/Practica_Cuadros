@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadro Centrado</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+        }
+        body
+        {
+            background-color: rgb(179, 14, 14);
+        }
+        .contenedor
+        {
+            display:flex;
+            height: 100vh;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        .cuadro
+        {
+            background: linear-gradient(rgb(82, 2, 128), rgb(15,219,219));
+            width: 100px;
+            height: 100px;
+            border: 5px solid black;
+        }
+        .renglon
+        {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            background-color: rgb(179, 14, 14);
+        }
+        .centrado
+        {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="renglon">
+            <div class="cuadro"></div>
+            <div class="cuadro"></div>
+        </div>
+        <div class="centrado">
+            <div><div class="cuadro"></div></div>
+        </div>
+        <div class="renglon">
+            <div class="cuadro"></div>
+            <div class="cuadro"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
